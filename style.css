@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --text: 1rem;
+  --special-color: #1f7cff;
+  --background-color: #e5e5e5;
+  --gray-text: #070f18;
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #070f18;
+  margin: 0 1rem;
+}
+
+nav {
+  /* background: #f6f7cc; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+  flex-wrap: wrap;
+}
+
+#logo {
+  flex: 1 1 20 rem;
+  display: flex;
+}
+
+.nav-links {
+  flex: 3 1 20rem;
+  display: flex;
+  padding: 0 10rem;
+  justify-content: space-around;
+}
+
+.login {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+#sign-in {
+  padding: 0.5rem 3rem;
+  background: #f5f6fb;
+  border-radius: 5rem;
+}
+
+/*Mobile*/
+@media screen and (max-width: 375px) {
+  .nav-links {
+    display: none;
+  }
+
+  #sign-in {
+    display: none;
+  }
+}
+
+/*TABLET*/
+@media screen and (max-width: 970px) {
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #sigh-in {
+  }
+}

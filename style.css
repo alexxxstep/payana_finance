@@ -92,9 +92,9 @@ nav {
 }
 
 .hero_box {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .hero-introduction {
@@ -136,33 +136,48 @@ nav {
   background: url('/img/main_head.jpg');
 }
 
-/*MOBILE*/
+.hero-companies-title {
+  margin: 20px 0;
+}
+.hero-companies-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero-companies-item {
+  margin: 5px 0;
+  margin-right: 24px;
+}
+
+/*-=MOBILE=-*/
 @media screen and (max-width: 375px) {
   .nav-links {
     display: none;
   }
 
-  .hero-introduction-title {
-    font-size: 38;
-    line-height: 57px;
-    text-align: left;
+  .login_sign_in {
+    display: none;
   }
-  .hero-introduction-text {
-    font-size: 16px;
-    line-height: 32px;
-    text-align: left;
-  }
-
   .hero-btn {
     display: flex;
   }
 
-  .login_sign_in {
-    display: none;
+  .hero-introduction-title {
+    font-size: 38px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .hero-introduction-text {
+    font-size: var(--text);
+    line-height: 2;
+    text-align: left;
+  }
+
+  .hero-companies-item img{
+    height: 25px;
   }
 }
 
-/*TABLET*/
+/*-=TABLET=-*/
 @media screen and (min-width: 834px) {
   .container {
     padding: 0 40px;

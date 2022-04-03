@@ -6,14 +6,14 @@
 
 html {
   font-size: 62.5%;
-  --text: 1rem;
+  --text: 16px;
   --special-color: #1f7cff;
   --background-color: #e5e5e5;
   --gray-text: #070f18;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 li,
@@ -81,7 +81,7 @@ nav {
   justify-content: flex-end;
 }
 
-#sign-in {
+.login_sign_in {
   padding: 0.5rem 3rem;
   background: #f5f6fb;
   border-radius: 5rem;
@@ -116,6 +116,13 @@ nav {
 }
 
 .hero-introduction-btn {
+  width: 180px;
+  height: 48px;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #1f7cff;
+  color: #fff;
+  border-radius: 50px;
 }
 
 .hero_images {
@@ -129,13 +136,28 @@ nav {
   background: url('/img/main_head.jpg');
 }
 
-/*Mobile*/
+/*MOBILE*/
 @media screen and (max-width: 375px) {
   .nav-links {
     display: none;
   }
 
-  #sign-in {
+  .hero-introduction-title {
+    font-size: 38;
+    line-height: 57px;
+    text-align: left;
+  }
+  .hero-introduction-text {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .hero-btn {
+    display: flex;
+  }
+
+  .login_sign_in {
     display: none;
   }
 }
@@ -145,17 +167,14 @@ nav {
   .container {
     padding: 0 40px;
   }
-  h3 {
-    font-size: 2.8rem;
-  }
 
   .nav-links {
     display: none;
   }
 
   .hero-introduction-title {
-    font-size: 55px;
-    line-height: 82px;
+    font-size: 38px;
+    line-height: 2;
     text-align: center;
   }
 

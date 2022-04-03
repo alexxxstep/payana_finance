@@ -9,7 +9,7 @@ html {
   --text: 16px;
   --special-color: #1f7cff;
   --background-color: #e5e5e5;
-  --gray-text: #070f18;
+  --gray-text: #575455;
 }
 
 body {
@@ -150,6 +150,9 @@ nav {
 
 /*-=MOBILE=-*/
 @media screen and (max-width: 375px) {
+  .container {
+    padding: 0 24px;
+  }
   .nav-links {
     display: none;
   }
@@ -163,7 +166,7 @@ nav {
 
   .hero-introduction-title {
     font-size: 38px;
-    line-height: 1.5;
+    line-height: 57px;
     text-align: left;
   }
   .hero-introduction-text {
@@ -175,10 +178,47 @@ nav {
   .hero-companies-item img {
     height: 25px;
   }
+
+  /* BENEFITS MOBILE*/
+  .benefits {
+    margin: 20px 0;
+  }
+  .ben-titles {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .ben-title_1 {
+    color: #f75c4e;
+  }
+  .ben-text {
+    font-size: var(--text);
+    color: var(--gray-text);
+  }
+
+  .ben-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .ben-item {
+    display: flex;
+    margin: 30px 0;
+  }
+
+  .ben-icon {
+    margin-right: 20px;
+  }
+
+  .ben-item-text {
+    margin: 10px 0;
+    font-size: var(--text);
+    line-height: 2;
+    color: var(--gray-text);
+  }
 }
 
 /*-=TABLET=-*/
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 376px) and (max-width: 834px) {
   .container {
     padding: 0 40px;
   }

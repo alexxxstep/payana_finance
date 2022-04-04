@@ -215,6 +215,23 @@ nav {
     line-height: 2;
     color: var(--gray-text);
   }
+
+  /* contact mobile */
+  .contact {
+  }
+
+  .contact-video {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-video video {
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 20px;
+  }
 }
 
 /*-=TABLET=-*/

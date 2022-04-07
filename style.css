@@ -53,15 +53,32 @@ a {
   margin: 0 1rem;
 }
 
+button {
+  border: none;
+  border-radius: 50px;
+}
+
+.get-started-btn {
+  background-color: var(--special-color);
+  width: 180px;
+  height: 48px;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #1f7cff;
+  color: #fff;
+}
+
 .container {
   padding: 0 24px;
   margin: 0 auto;
 }
 
 /*HEADER*/
+
 nav {
   /* background: #f6f7cc; */
   padding: 40px 0;
+  display: flex;
 }
 
 .main-logo {
@@ -81,10 +98,9 @@ nav {
   justify-content: flex-end;
 }
 
-.login_sign_in .contact-btn {
+.login_sign_in {
   padding: 0.5rem 3rem;
   background: #f5f6fb;
-  border-radius: 5rem;
 }
 
 /*HERO*/
@@ -97,7 +113,7 @@ nav {
   overflow: hidden; */
 }
 
-.hero-introduction {
+/* .hero-introduction {
   text-align: center;
 }
 
@@ -124,7 +140,7 @@ nav {
   background-color: #1f7cff;
   color: #fff;
   border-radius: 50px;
-}
+} */
 
 .hero_images {
   position: relative;
@@ -135,18 +151,6 @@ nav {
   height: 100%;
   object-fit: cover;
   background: url('/img/main_head.jpg');
-}
-
-.hero-companies-title {
-  margin: 20px 0;
-}
-.hero-companies-icons {
-  display: flex;
-  flex-wrap: wrap;
-}
-.hero-companies-item {
-  margin: 5px 0;
-  margin-right: 24px;
 }
 
 /*-=MOBILE=-*/
@@ -174,6 +178,18 @@ nav {
     font-size: var(--text);
     line-height: 2;
     text-align: left;
+  }
+
+  .hero-companies-title {
+    margin: 20px 0;
+  }
+  .hero-companies-icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hero-companies-item {
+    margin: 5px 0;
+    margin-right: 24px;
   }
 
   .hero-companies-item img {
@@ -235,7 +251,6 @@ nav {
   .contact-video video {
     margin: 10px 0;
     width: 100%;
-    border-radius: 20px;
   }
 
   .contact-form {
@@ -260,9 +275,7 @@ nav {
     padding: 12px 24px;
   }
 
-  .contact-btn {
-    margin: 0 auto;
-    margin-bottom: 24px;
+  .get-started-btn {
     width: 90%;
   }
 }
@@ -273,17 +286,108 @@ nav {
     padding: 0 40px;
   }
 
-  .nav-links {
+  .nav-links,
+  .hero-image {
     display: none;
+  }
+
+  .login_sign_in {
+    width: 150px;
+    padding: 12px 0;
+    background: #f5f6fb;
+  }
+
+  .hero-introduction {
+    text-align: center;
+    margin: 0 auto;
   }
 
   .hero-introduction-title {
+    margin: 0 auto;
+    width: 55%;
+    font-weight: 700;
     font-size: 38px;
+    line-height: 57px;
+    color: #000;
+  }
+  .hero-introduction-text {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 16px;
     line-height: 2;
+    color: var(--gray-text);
+  }
+
+  .hero-companies-title {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .hero-companies-icons {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .hero-companies-item {
+    margin: 5px 0;
+    margin-right: 24px;
+  }
+
+  .hero-companies-item img {
+    height: 30px;
+  }
+
+  /* BENEFITS TABLET*/
+  .benefits {
+    margin: 20px 0;
+  }
+  .ben-titles,
+  .contact-titles {
+    margin: 20px 0;
     text-align: center;
   }
 
-  .hero-image {
-    display: none;
+  .ben-title_1,
+  .contact-title_1 {
+    color: #f75c4e;
+  }
+  .ben-text,
+  .contact-text {
+    max-width: 300;
+    font-size: var(--text);
+    color: var(--gray-text);
+  }
+
+  .ben-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ben-group__1 {
+    margin: 0 10px;
+    flex: 1 1 10px;
+  }
+  .ben-group__2 {
+    margin: 0 10px;
+    flex: 1 1 10px;
+  }
+
+  .ben-item {
+    display: flex;
+    margin: 30px 0;
+  }
+
+  .ben-icon {
+    margin-right: 10px;
+  }
+
+  .ben-item-text {
+    margin: 10px 0;
+    font-size: var(--text);
+    line-height: 2;
+    color: var(--gray-text);
   }
 }

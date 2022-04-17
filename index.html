@@ -24,12 +24,14 @@
           <div class="main-logo">
             <img src="/icons/logoPayna.svg" alt="l" />
           </div>
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#showcase">Showcase</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-          </ul>
+          <div class="nav-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#showcase">Showcase</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
 
           <div class="login">
             <button class="login_sign_in">Sign in</button>
@@ -53,7 +55,10 @@
           </div>
 
           <div class="hero-images">
-            <div class="hero_image"></div>
+            <div class="hero-img">
+              <!-- <div class="hero-bulk-img"></div>
+              <div class="hero-analytics-img"></div> -->
+            </div>
           </div>
         </div>
 
@@ -90,8 +95,93 @@
           </p>
         </div>
 
-        <div class="ben-box">
-          <div class="ben-group__1">
+        <div class="ben-box-desktop">
+          <div class="ben-group">
+            <div class="ben-item ben__1">
+              <div class="ben-icon">
+                <img src="/icons/shareInsights.svg" alt="" />
+              </div>
+
+              <div class="ben-item-description">
+                <h4 class="ben-item-title">Share Insights</h4>
+                <p class="ben-item-text">
+                  Working together with your team to make decisions
+                </p>
+              </div>
+            </div>
+
+            <div class="ben-item ben__3">
+              <div class="ben-icon">
+                <img src="/icons/kanban-mode.svg" alt="" />
+              </div>
+
+              <div class="ben-item-description">
+                <h4 class="ben-item-title">Kanban Mode</h4>
+                <p class="ben-item-text">
+                  Organize the report that easy to be understand
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ben-group">
+            <div class="ben-item ben__4">
+              <div class="ben-icon">
+                <img src="/icons/track-leads.svg" alt="" />
+              </div>
+
+              <div class="ben-item-description">
+                <h4 class="ben-item-title">Track Leads</h4>
+                <p class="ben-item-text">
+                  See where your money goes and comes in business
+                </p>
+              </div>
+            </div>
+            <div class="ben-item ben__6">
+              <div class="ben-icon">
+                <img src="/icons/reward-system.svg" alt="" />
+              </div>
+
+              <div class="ben-item-description">
+                <h4 class="ben-item-title">Reward System</h4>
+                <p class="ben-item-text">
+                  Motivate your team working harder and receive a gift
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ben-group">
+            <div class="ben-item ben__2">
+              <div class="ben-icon">
+                <img src="/icons/offline-mode.svg" alt="" />
+              </div>
+
+              <div class="ben-item-description">
+                <h4 class="ben-item-title">Offline Mode</h4>
+                <p class="ben-item-text">
+                  Use the feature while off from internet? sure can
+                </p>
+              </div>
+            </div>
+
+            <div class="ben-item ben__5">
+              <div class="ben-icon">
+                <img src="/icons/country189.svg" alt="" />
+              </div>
+
+              <div class="ben-item-description">
+                <h4 class="ben-item-title">189 Country</h4>
+                <p class="ben-item-text">
+                  Working together worldwide people from anywhere
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ben-box-mobile">
+          <div class="ben-group">
             <div class="ben-item ben__1">
               <div class="ben-icon">
                 <img src="/icons/shareInsights.svg" alt="" />
@@ -130,7 +220,7 @@
             </div>
           </div>
 
-          <div class="ben-group__2">
+          <div class="ben-group">
             <div class="ben-item ben__4">
               <div class="ben-icon">
                 <img src="/icons/track-leads.svg" alt="" />
@@ -172,32 +262,36 @@
       </section>
 
       <section class="contact">
-        <div class="contact-video">
-          <video
-            controls
-            src="img/video.mp4"
-            poster="/img/video_poster.jpg"
-          ></video>
+        <div class="contact-box">
+          <div class="contact-video">
+            <video
+              controls
+              src="img/video.mp4"
+              poster="/img/video_poster.jpg"
+            ></video>
+          </div>
         </div>
 
-        <div class="contact-titles">
-          <h5 class="contact-title_1">SAVE MORE TIME</h5>
-          <h3 class="contact-title_2">And Boost Productivity</h3>
-          <p class="contact-text">
-            Your employees can bring any success into your business, so we need
-            to take care of them
-          </p>
-        </div>
+        <div class="contact-box">
+          <div class="contact-titles">
+            <h5 class="contact-title_1">SAVE MORE TIME</h5>
+            <h3 class="contact-title_2">And Boost Productivity</h3>
+            <p class="contact-text">
+              Your employees can bring any success into your business, so we
+              need to take care of them
+            </p>
+          </div>
 
-        <form class="contact-form">
-          <input
-            class="contact-email"
-            type="email"
-            id="email required"
-            placeholder="Email Address"
-          />
-          <button class="get-started-btn" type="submit">Get Started</button>
-        </form>
+          <form class="contact-form">
+            <input
+              class="contact-email"
+              type="email"
+              id="email required"
+              placeholder="Email Address"
+            />
+            <button class="get-started-btn" type="submit">Get Started</button>
+          </form>
+        </div>
       </section>
     </div>
   </body>

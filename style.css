@@ -141,3 +141,27 @@ body {
   background-color: var(--gray-text);
   color: white;
 }
+
+/* PC */
+/*-------------------------------------------------------*/
+@media (max-width: 1512px) {
+  [class*='__container'] {
+    max-width: 1272px;
+  }
+}
+
+/* TABLET */
+/*-------------------------------------------------------*/
+@media (max-width: 833.98px) {
+  [class*='__container'] {
+    max-width: 754px;
+  }
+}
+
+/* MOBILE */
+/*-------------------------------------------------------*/
+@media (max-width: 374.98px) {
+  [class*='__container'] {
+    max-width: 327px;
+  }
+}

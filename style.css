@@ -142,6 +142,43 @@ body {
   color: white;
 }
 
+/* head section */
+/*-------------------------------------------------------*/
+.head {
+}
+.head__box {
+}
+.head__expert {
+}
+.head__title {
+}
+.title_h1 {
+}
+.head__text {
+}
+.text {
+}
+.head__button {
+}
+.button {
+}
+.head__images {
+}
+.head__img {
+}
+.head__img_analytics {
+}
+.head__img_bulk {
+}
+.head__companies {
+}
+.head__companies_title {
+}
+.head__companies_list {
+}
+.head__companies_item {
+}
+
 /* PC */
 /*-------------------------------------------------------*/
 @media (max-width: 1512px) {
@@ -156,12 +193,21 @@ body {
   [class*='__container'] {
     max-width: 754px;
   }
+
+  .menu__list {
+    display: none;
+  }
 }
 
 /* MOBILE */
 /*-------------------------------------------------------*/
 @media (max-width: 374.98px) {
   [class*='__container'] {
-    max-width: 327px;
+    max-width: none;
+  }
+
+  .menu,
+  .header__button {
+    display: none;
   }
 }
